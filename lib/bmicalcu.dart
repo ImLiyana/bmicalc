@@ -68,13 +68,17 @@ class _BmiCalcState extends State<BmiCalc> {
     ),
     ),
             ),
+            SizedBox(height: 20,),
 
-            TextButton(onPressed: () {
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(foregroundColor: Colors.white,backgroundColor: Colors.blueAccent),
+                onPressed: () {
                   setState(() {
                     calculate();
                   });
                 },
                   child: Text('calculateBmi')),
+            SizedBox(height: 10,),
             Text(result.toString()),
           ]),
     );
